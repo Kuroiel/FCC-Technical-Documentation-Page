@@ -1,8 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <link rel="stylesheet" type="text/css" href="product.css"/>
+  <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="documentation.css"/>
 </head>
+
+<nav id="navbar">
+	<header id="topic">Python for First Timers</header>
+	<ul id="navList">
+<a href="#What_is_Python?" class="nav-link">What is Python?</a>
+<a href="#The_Print_Command" class="nav-link">The Print Command</a>
+<a href="#Variables" class="nav-link">Variables</a>
+<a href="#Data_Types" class="nav-link">Data Types</a>
+<a href="#More_to_Come" class="nav-link">More to Come</a>
+<a href="#For_Further_Reading" class="nav-link">For Further Reading</a>
+</nav>
+
+
+<body>
+	<main id="main-doc">
+
+	<section class="main-section" id="What_is_Python?">
+		<header>What is Python?
+		</header>
+		<p>Python, at its core, is a simple, yet powerful scripting language that is widely used today. Overall, the language was made to be easily accessable cross-platform and easy to read. The language is also equipped to handle object-oriented programming, functional programming and procedural programming. Because of all these features, Python is relatively beginner friendly but has very powerful modules which make it suitable for both beginners who have yet to write their first line of code as well as seasoned developers working on their next project.</p>
+
+		<p>A good website to start getting your feet wet with programming is <a href="https://repl.it" target="_blank">Repl.it</a>.
+		It saves you the trouble of downloading and setting up an IDE(Integrated Development Environment) on your computer, as you can just code and run right there on the site. It also has support for various other programming languages such as Javascript, Ruby, C#, and much more. For Python, Repl.it lets you avoid the interpretor when starting out which helps smooth out the initial learning curve.</p>
+		</section>
+
+	<section class="main-section" id="The_Print_Command">
+		<header>The Print Command
+		</header>
+		<p>One of the most traditional first steps for learning programming is learning how to output the phrase "Hello World". Here is the code to do so in Python:</p>
+		<code>print ("Hello World")</code>
+		<p>You can simply copy that line into Repl.it and hit run, the console will return Hello World. The print command tells the console to output whatever is in the parathenses. You can do more than just outputting words with print. For example, you can have it do math: </p>
+		<code>print (1+1)</code>
+		<p>You can put math expressions into the print command and it will process the expression and print the answer. The print command is a versatile tool that will be very helpful early on in your journey to learning Python. 
+		</section>
+
+	<section class="main-section" id="Variables">
+		<header>Variables
+		</header>
+		<p>Variables are very common in math problems for representing an unknown value that can be changed. Variables behave similarly in programming. You can use them to store values to use later, and you can change them as needed. Here is how to assign a number to a variable: </p>
+		<code>x = 5</code>
+		<p>By doing this, you have assigned the variable x with a value of 5.</p>
+		<code>print (x)</code>
+		<p>This will output 5, since print will output the value that is stored in x. Now lets take a look at additional things you can do with variables and the print command.</p>
+		<code>y = 6<br>
+			print (x+y)<br>
+		z = "Woah."</code>
+		<p>You can do variable math with the print command. It will output the answer, and not the full expression so just be aware of that. You can add additional print statements or more to 1 print statement in order to print additional info if you need. Also you can store words(called Strings) in a variable. However, there are many more options on what can be stored in a variable. These different types of data are convinently called Data Types.</p>
+		<div id="typeList">
+		<ul>Data types you can store in a variable:
+		</div>
+			<li>string (str)</li>
+			<li>number (int)</li>
+			<li>array (list)</li>
+			<li>boolean (bool)</li>
+			<li>object (dict)</li>
+		</ul>
+		<p>The definitions of these data types will covered later. As you can see, variables are very powerful and flexible. This allows you to store a bunch of different data into a variable which then you can pull up later on in your code. Since you can change what is stored in a variable you can think of a variable as some raw material going into a factory production line: your initial value stored is the raw material, as the material goes through the production process(the code) the value changes and the end product is what value the variable has stored after the code has fully executed.</p>
+		</section>
+
+	<section class="main-section" id="Data_Types">
+		<header>Data Types
+		</header>
+		<p>In this section, let us go over some of the basic data types found in python. We will start with the ones that have already appeared earlier in this documentation. The first one will be numbers. In Python, there are 3 different types of numbers:</p>
+		<div>
+		<ul>
+		</div>
+			<li>int</li>
+			<li>float</li>
+			<li>complex</li>
+		</ul>
+		<p>Here, the definitions of 2 of the types are relatively easy to relate to. An int is an integer, and just like in math, an int is a whole number. Same with complex, it is the same as a complex number with the square root of -1, i, in math. The last type, a float, has a different name than what most people are used to, however it is still a format in math. A float is a number with a decimal. That is about all there is to it about them.</p>
+		<p>Next up is strings. Strings are basically just characters in quotations, either single or double quotes, and as seen earlier, a print command will just print what is in the quotes. However, there are much more things you can do with strings. For example, you can look up how long a string is.</p>
+			<code>len(str)</code>
+<p>In the example code above, the str stands for a string, it can be any string. Just think as if we named a variable str and assigned it a value of "Hi". Now len() is a function, more on those later, which gets the length of what is in the ()s. This will calculate how many characters are in the string. So by doing the following:</p>
+<code>X="Hi"<br>
+	print(len(X))</code>
+	<p>The above code will print 2 as that is how many characters are in the stored string in the variable.</p>
+		</section>
+
+		<section class="main-section" id="More_to_Come">
+			<header>More to Come
+			</header>
+			<p>More info to come later! Check back periodically for new updates!</p>
+		</section>
+
+	<section class="main-section" id="For_Further_Reading">
+		<header id="#source">For Further Reading
+		</header>
+		<p>This info and more can be found <a href="https://docs.python.org/3/tutorial/index.html" target="_blank">here</a> and <a href="https://www.w3schools.com/python/default.asp" target="_blank">here</a></p>
+		</section>
+
+	</main>
+</body>
+</nav>
 </html>
 <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
